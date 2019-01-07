@@ -1,0 +1,157 @@
+.foof {
+    width: 100%;
+    background-color: #efeeeb;
+}
+.footer {
+    width: 1200px;
+    height: 520px;
+    margin: 0 auto;
+    padding-top: 75px;
+    background-color: #efeeeb;
+    box-sizing: border-box;
+}
+.footer ul {
+    float: left;
+    width: 16%;
+}
+.footer ul:first-child {
+    margin-left: 45px;
+}
+.footer ul:last-child li:first-child,
+.footer ul li:first-child {
+    line-height: 40px;
+    font-size: 20px;
+    color: #666;
+}
+.footer ul li a{
+    color: #737370;
+    font-size: 12px;
+    line-height: 20px;
+    
+}
+.footer ul li a:hover{
+    color: #e95f46;
+}
+.footer ul:last-child li {
+    color: #737370;
+    font-size: 12px;
+    line-height: 20px;
+}
+.footer ul:last-child li i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+.footer ul:last-child li:last-child span{
+    width: 118px;
+    height: 28px;
+    border: 1px solid #d2d2d2;
+    font-size: 14px;
+    display: block;
+    line-height: 28px;
+    margin-top: 15px;
+}
+.footer ul:last-child li:last-child span i {
+    font-size: 16px;
+    color: #777675;
+    margin-left: 10px;
+}
+.footer ul:last-child li:last-child a:hover {
+    color: #737370;
+}
+.lastDiv {
+    width: 100%;
+    background-color: #fff;
+    height: 240px;
+}
+.lastDiv p:first-child {
+    width: 105px;
+    height: 60px;
+    margin: 25px auto 20px;
+    display: block;
+}
+.lastDiv p:first-child img {
+    width: 105px;
+    height: 60px;
+}
+.lastDiv b {
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+    font-weight: 400;
+    text-align: center;
+}
+.lastDiv b a i {
+    font-size: 35px;
+    color: #989d9a;
+    margin: 0 3px;
+}
+.lastDiv b .weixin {
+    position: relative;
+}
+
+.lastDiv b .wxdiv {
+    width: 138px;
+    height: 138px;
+    background: url(/static/images/nb-weixin-code-figure.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: -164px;
+    left: -53px;
+    display: none;
+    border: 1px solid #989d9a;
+    border-radius: 4px;
+}
+.lastDiv b .weixin:hover .wxdiv {
+    display: block;
+}
+.lastDiv p:nth-of-type(3),
+.lastDiv p:nth-of-type(2) {
+    text-align: center;
+    font-size: 12px;
+    color: #989d9a;
+    line-height: 30px;
+}
+.lastDiv p:nth-of-type(3) a:nth-of-type(2) img,
+.lastDiv p:nth-of-type(3) a:nth-of-type(1) img{
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.lastDiv p:nth-of-type(3) a:nth-of-type(2) {
+    color: #989d9a;
+}
+.lastDiv p:nth-of-type(3) a:nth-of-type(3) {
+    background: url(/static/images/cnnic.png) no-repeat left;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background-size: cover;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+.lastDiv p:nth-of-type(3) a:nth-of-type(4) {
+    background: url(/static/images/cert.png) no-repeat left;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background-size: cover;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.lastDiv p:nth-of-type(4) {
+    text-align: center;
+}
+.lastDiv p:nth-of-type(4) a {
+    color: #ed787c;
+    font-size: 14px;
+    margin: 10px 8px;
+}
+.lastDiv p:nth-of-type(4) a:last-child {
+    display: inline-block;
+    width: 92px;
+    height: 22px;
+    background: url(/static/images/cn.png) no-repeat left;
+    vertical-align: middle;
+}

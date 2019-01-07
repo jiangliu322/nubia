@@ -1,0 +1,61 @@
+@import "component/footer.scss";
+@import "component/header.scss";
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul li {
+    list-style: none;
+}
+.main {
+    width: 1200px;
+    height: 1500px;
+    margin: 0 auto;
+    .mainLeft {
+        width: 620px;
+        height: 1500px;
+        float: left;
+        img {
+            width: 576px;
+            height: 576px;
+            margin: 44px auto 0;
+            background-color: red;
+            display: block;
+        }
+        a {
+            width: 84px;
+            height: 84px;
+            border: 1px solid #ccc;
+            float: left;
+            margin-left: 10px;
+            
+        }
+        a:nth-of-type(1) {
+            margin-left: 120px;
+            background: url(../static/images/5c07666599c1850.jpg) no-repeat center;
+            background-size: cover;
+        }
+        a:nth-of-type(2) {
+            background: url(../static/images/5c076665749f655.jpg) no-repeat center;
+            background-size: cover;
+        }
+        a:nth-of-type(3) {
+            background: url(../static/images/5c07666574f8079.jpg) no-repeat center;
+            background-size: cover;
+        }
+        a:nth-of-type(4) {
+            background: url(../static/images/5c0766655947638.jpg) no-repeat center;
+            background-size: cover;
+        }
+    }
+    .mainRight {
+        width: 580px;
+        height: 1500px;
+        float: left;
+        background-color: #ccc;
+    }
+}

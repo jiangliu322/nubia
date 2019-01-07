@@ -1,0 +1,46 @@
+@import "./component/footer.scss";
+@import "./component/header.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.main {
+    width: 100%;
+}
+.main .banner {
+    width: 100%;
+    height: 620px;
+}
+.main .banner li a {
+    width: 100%;
+    height: 620px;
+    display: block;
+    background: url(../static/images/154616385544.jpg) no-repeat center;
+    background-size: cover;
+}
+.new {
+    width: 100%;
+    height: 300px;
+    background-color: #efeeeb;
+}
+.new ul li {
+    float: left;
+    width: 33%;
+    height: 294px;
+    margin: 3px;
+    
+}
+.new ul li img {
+    width: 100%;
+    height: 294px;
+}
+
+
