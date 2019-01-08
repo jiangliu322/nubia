@@ -26,8 +26,8 @@ body {
     input {
     width: 348px;
     height: 48px;
-    display: block;
-    margin: 0 auto 20px;
+    margin: 0 10px 20px 245px;
+    float: left;
     border: 1px solid #e0e4e7;
     padding-left: 10px;
     background-color: #faffbd;
@@ -36,8 +36,8 @@ body {
     .loa {
     width: 360px;
     height: 50px;
-    display: block;
-    margin: 0 auto 30px;
+    float: left;
+    margin: 0 245px 20px;
     background-color: #e8380d;
     line-height: 50px;
     text-align: center;
@@ -46,7 +46,14 @@ body {
     a {
     color: #e8380d;
     font-size: 14px;
-    text-align: center;
-    display: block;
+    margin-left: 373px;
+    }
+    .aspan {
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        color: red;
+        font-size: 14px;
+        display: none;
     }
 }

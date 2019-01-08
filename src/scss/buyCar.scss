@@ -1,0 +1,223 @@
+@import "./component/footer.scss";
+@import "./component/header.scss";
+.main {
+    width: 100%;
+    background-color: #fff;
+    .emptyCar {
+        height: 380px;
+        width: 670px;
+        margin: 0 auto;
+        display: block;
+        span {
+            margin-top: 120px;
+            line-height: 35px;
+            font-size: 26px;
+            color: #666666;
+            width: 255px;
+            height: 70px;
+            float: left;
+        }
+        img {
+            width: 290px;
+            height: 292px;
+            float: right;
+            margin: 30px 50px 0 0;
+        }
+        a {
+            width: 165px;
+            height: 35px;
+            float: left;
+            border-radius: 15px;
+            background-color: #e8380d;
+            font-size: 14px;
+            line-height: 35px;
+            text-align: center;
+            color: #fbf3e0;
+            margin-top: 20px;
+        }
+    }
+    .haveCar {
+        display: none;
+        width: 1200px;
+        margin: 0 auto;
+        img {
+            width: 1200px;
+            height: 65px;
+            margin-top: 50px;
+            margin-bottom: 85px;
+        }
+        p {
+            line-height: 20px;
+            font-size: 14px;
+            color: #747774;
+            span {
+                color: #ff7563;
+            }
+        }
+        table {
+            width: 1200px;
+            margin-bottom: 100px;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            .trone {
+                th {
+                    height: 50px;
+                    background-color: #f7f9f9;
+                    line-height: 50px;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #a1a3a1;
+                }
+                th:nth-of-type(1) {
+                    width: 15%;
+                }
+                 th:nth-of-type(2) {
+                    width: 38%;
+                }
+                 th:nth-of-type(3) {
+                    width: 11%;
+                }
+                 th:nth-of-type(4) {
+                    width: 16%;
+                }
+                 th:nth-of-type(5) {
+                    width: 12%;
+                }
+                 th:nth-of-type(6) {
+                    width: 6%;
+                }
+            }
+            .trtwo {
+                th {
+                    height: 120px;
+                    line-height: 120px;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #a1a3a1;
+                }
+                th:nth-of-type(1) {
+                    width: 15%;
+                    position: relative;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -50px;
+                        margin-top: -50px;
+                    }
+                }
+                 th:nth-of-type(2) {
+                    width: 38%;
+                    text-align: left;
+                    span {
+                        line-height: 120px;
+                        font-size: 14px;
+                        color: #747774;
+                        margin-left: 10px;
+                        
+                    }
+                }
+                 th:nth-of-type(3) {
+                    width: 11%;
+                    span {
+                        font-weight: normal;
+                        color: #747774;
+                    }
+                }
+                 th:nth-of-type(4) {
+                    width: 16%;
+                    div {
+                        margin:46px auto ;
+                        width: 108px;
+                        height: 25px;
+                        border: 1px solid #e0d7e3;
+                        a{
+                            float: left;
+                            width: 25px;
+                            height: 25px;
+                            line-height: 25px;
+                            text-align: center;
+                            color: #e0d7e3;
+                            font-size: 16px;
+                        }
+                        span {
+                            float: left;
+                           width: 56px;
+                           height: 25px;
+                           border-left: 1px solid #e0d7e3;
+                           border-right: 1px solid #e0d7e3;
+                            line-height: 25px;
+                            text-align: center;
+                        }
+                    }
+                }
+                 th:nth-of-type(5) {
+                    width: 12%;
+                    span {
+                        font-weight: normal;
+                        color: #747774;
+                    }
+                }
+                 th:nth-of-type(6) {
+                    width: 6%;
+                    a {
+                        color: #747774;;
+                    }
+                    a:hover {
+                        color: #e95f46;
+                    }
+                }
+            
+            }
+            .three {
+                height: 90px;
+                td:nth-of-type(2) {
+                    text-align: right;
+                    line-height: 90px;
+                    font-size: 14px;
+                    color: #747774;
+                    padding-right: 10px;
+                }
+                 td:nth-of-type(3) {
+                    line-height: 90px;
+                    font-size: 14px;
+                    color: #ff0000;
+                    padding-left: 10px;
+                }
+            }
+            .trfour {
+                td {
+                    div {
+                        height: 68px;
+                        width: 300px;
+                        margin: 0 auto;
+                        a:nth-of-type(1) {
+                            width: 98px;
+                            height: 41px;
+                            margin: 12px 25px;
+                            border: 1px solid #e8380d;
+                            border-radius: 25px;
+                            float: left;
+                            color: #e8380d;
+                            text-align: center;
+                            line-height: 41px;
+                        }
+                         a:nth-of-type(2) {
+                            width: 98px;
+                            height: 41px;
+                            margin: 12px 25px;
+                            border: 1px solid #e8380d;
+                            border-radius: 25px;
+                            float: right;
+                            background-color: #e8380d;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 41px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

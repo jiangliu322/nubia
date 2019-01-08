@@ -12,9 +12,18 @@ body {
 .main {
     width: 850px;
     height: 475px;
+    position: relative;
     background-color: #fff;
     margin: 80px auto;
     overflow: hidden;
+    p {
+       position: absolute;
+       left: 250px;
+       top: 90px;
+       color: red;
+       display: none;
+       font-size: 14px; 
+    }
 }
 .main h1 a {
     display: block;

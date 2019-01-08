@@ -1,14 +1,12 @@
-
-require(["./requirejs.config"], () => {
-	//引入shop需要依赖的模块
-	require(["jquery"], () => {
-		$(function(){
+define(["jquery"], () => {
+	$(function(){
 			$("#header").load("/html/component/header.html");
 			$("#footer").load("/html/component/footer.html");
 			//获取div
 			var disbox = document.getElementById("disbox")
+			
 			function addbox(test){
-				
+				console.log(disbox)
 				if(test){
 					//设置div高度增加动画
 					clearInterval(disbox.timer)
@@ -36,10 +34,10 @@ require(["./requirejs.config"], () => {
 				
 				
 			}
-			
+			console.log(document.getElementById("phone"))
 			document.getElementById("phone").onmouseenter = function(){
-				addbox(true)	
-				console.log("test")
+				console.log(disbox+"lelele")
+				addbox(true)
 			}
 			document.getElementById("phone").onmouseleave = function(){
 				addbox()
@@ -80,5 +78,4 @@ require(["./requirejs.config"], () => {
 					document.body.top = "0px"
 				}
 			})
-	})
 })

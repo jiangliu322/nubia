@@ -4,16 +4,20 @@
 		<meta charset="UTF-8">
 		<title>NUBIA注册</title>
 		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<script type="text/javascript" src="/libs/require/require.js" data-main="/js/register.js"></script>
 	</head>
 	<body>
 		<div class="main">
-			<h1><a href="/index.html"></a></h1>
-			<input type="text" name="" id="" value="" placeholder="请输入手机号" />
-			<input type="password" name="" id="" value="" placeholder="请输入密码（6-16位，字母.数字.下划线）" />
-			<input type="password" name="" id="" value="" placeholder="请再次输入密码" />
-			<input type="email" name="" id="" value="" placeholder="请输邮箱" />
-			<a class="loa" href="#">立即注册</a>
-			<a href="/html/login.html">已有账号去登陆</a>
+			<form action="">
+				<h1><a href="/index.html"></a></h1>
+				<input type="text" name="" id="phoneNumber" value="" placeholder="请输入手机号" /><span class="aspan">请输入正确的手机号！</span>
+				<input type="password" name="" id="password1" value="" placeholder="请输入密码（6-16位，字母.数字.下划线）" /><span class="aspan">请输入合规的密码！</span>
+				<input type="password" name="" id="password2" value="" placeholder="请再次输入密码" /><span class="aspan">请输入相同的密码！</span>
+				<input type="email" name="" id="emailNumber" value="" placeholder="请输邮箱" /><span class="aspan">请输入正确的邮箱！</span>
+				<a class="loa" id="loa" href="javascript:;">立即注册</a>
+				<a href="/html/login.html">已有账号去登陆</a>
+			</form>
+			
 		</div>
 	</body>
 </html>
