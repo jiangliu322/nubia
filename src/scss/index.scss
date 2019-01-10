@@ -18,24 +18,72 @@ a {
 .main .banner {
     width: 100%;
     height: 620px;
+    position: relative;
+    #prev {
+        width: 40px;
+        height: 80px;
+        background-color: rgba(255,255,255,.2);
+        position: absolute;
+        top: 270px;
+        left: 20px;
+        cursor:pointer;
+        z-index: 10;
+    }
+    #next {
+        width: 40px;
+        height: 80px;
+        background-color: rgba(255,255,255,.2);
+        position: absolute;
+        top: 270px;
+        right: 20px; 
+        cursor:pointer;
+        z-index: 10;
+    }
+    ul li {
+        width: 100%;
+        height: 620px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+    
+    ul li .ac {
+        z-index: 6;
+    }
+    ul li a {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        display: block;
+       
+    }
+    ul li:nth-of-type(1) a{
+        background: url(/static/images/154694423313.jpg) no-repeat center;
+    }
+    ul li:nth-of-type(2) a{
+        background: url(/static/images/154648418514.jpg) no-repeat center;
+    }
+    ul li:nth-of-type(3) a{
+        background: url(/static/images/154616385544.jpg) no-repeat center;
+    }
 }
-.main .banner li a {
-    width: 100%;
-    height: 620px;
-    display: block;
-    background: url(../static/images/154616385544.jpg) no-repeat center;
-    background-size: cover;
-}
+
 .new {
     width: 100%;
     height: 300px;
     background-color: #efeeeb;
 }
+.new ul {
+    width: 100%;
+    margin: 0 auto;
+}
 .new ul li {
     float: left;
-    width: 33%;
+    width: 33.3333%;
     height: 294px;
-    margin: 3px;
+    padding: 3px;
+    box-sizing: border-box;
     
 }
 .new ul li img {

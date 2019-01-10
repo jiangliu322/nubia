@@ -1,5 +1,5 @@
 require(["./requirejs.config"], () => {
-	require(["jquery"], () => {
+	require(["jquery", "cookie"], () => {
 		$(function(){
 			//点击登陆后获取输入的值
 			$(".loa").on("click", function(){
@@ -13,7 +13,9 @@ require(["./requirejs.config"], () => {
 							password: $("#password").val()
 						},
 						success: function(res){
-							if(res === 666){
+							if(res == $("#username").val()){
+								//用户名存cookie
+								$.cookie("username", res, {path: "/"});
 								location.href = "/html/shop.html";
 							}else if(res === 111){
 								console.log($("#lop"))

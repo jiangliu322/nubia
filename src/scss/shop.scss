@@ -20,43 +20,80 @@ a {
     width: 100%;
     height: 520px;
     position: relative;
+    #prev {
+        width: 40px;
+        height: 80px;
+        background-color: rgba(255,255,255,.2);
+        position: absolute;
+        top: 220px;
+        left: 20px;
+        cursor:pointer;
+        z-index: 10;
+    }
+    #next {
+        width: 40px;
+        height: 80px;
+        background-color: rgba(255,255,255,.2);
+        position: absolute;
+        top: 220px;
+        right: 20px; 
+        cursor:pointer;
+        z-index: 10;
+    }
 }
 .nav ul li {
     width: 100%;
     height: 520px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.nav ul li .ac {
+    z-index: 6;
 }
 .nav ul li a {
     width: 100%;
     height: 100%;
-    background: url(/static/images/154616385544.jpg) no-repeat center;
     background-size: cover;
     display: block;
+   
 }
-.nav .navlist {
-    width: 240px;
-    height: 496px;
-    position: absolute;
-    top: 0;
-    left: 352px;
-    background-color: #e9ecf0;
-    padding: 12px 0;
+.nav ul li:nth-of-type(1) a{
+    background: url(/static/images/154694423313.jpg) no-repeat center;
 }
-.nav .navlist ul {
-    width: 240px;
-    height: 496px;
+.nav ul li:nth-of-type(2) a{
+    background: url(/static/images/154648418514.jpg) no-repeat center;
 }
-.nav .navlist ul li {
-    width: 200px;
-    height: 62px;
-    padding-left: 40px;
-    line-height: 62px;
-    color: #444444;
-    font-size: 14px;
-    cursor:pointer;
+.nav ul li:nth-of-type(3) a{
+    background: url(/static/images/154616385544.jpg) no-repeat center;
 }
-.nav .navlist ul li:hover {
-    background-color: rgba(255, 255, 255, .5);
-}
+//.nav .navlist {
+//  width: 240px;
+//  height: 496px;
+//  position: absolute;
+//  top: 0;
+//  left: 352px;
+//  background-color: #e9ecf0;
+//  padding: 12px 0;
+//}
+//.nav .navlist ul {
+//  width: 240px;
+//  height: 496px;
+//}
+//.nav .navlist ul li {
+//  width: 200px;
+//  height: 62px;
+//  padding-left: 40px;
+//  line-height: 62px;
+//  color: #444444;
+//  font-size: 14px;
+//  cursor:pointer;
+//}
+//.nav .navlist ul li:hover {
+//  background-color: rgba(255, 255, 255, .5);
+//}
 .menu {
     height: 190px;
     padding-top: 10px;

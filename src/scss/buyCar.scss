@@ -7,7 +7,7 @@
         height: 380px;
         width: 670px;
         margin: 0 auto;
-        display: block;
+        display: none;
         span {
             margin-top: 120px;
             line-height: 35px;
@@ -37,7 +37,7 @@
         }
     }
     .haveCar {
-        display: none;
+        display: block;
         width: 1200px;
         margin: 0 auto;
         img {
@@ -87,6 +87,7 @@
                     width: 6%;
                 }
             }
+            .add,
             .trtwo {
                 th {
                     height: 120px;

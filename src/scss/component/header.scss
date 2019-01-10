@@ -43,6 +43,8 @@ a {
 }
 .header span {
     float: right;
+    height: 66px;
+    width: 50px;
     
 }
 .header .buyCar {
@@ -53,13 +55,23 @@ a {
     background-color: #f25c4a;
     text-align: center;
 }
-.header .login {
-    margin: 23px 15px;
-    line-height: 20px;
-    
+.lo1 {
+    padding: 23px 15px;
+    height: 20px;
+    width: 20px;
+    display: block;
+    background: url(/static/images/login.png) no-repeat center;
 }
+.lo2 {
+    padding: 23px 15px;
+    height: 20px;
+    width: 20px;
+    display: block;
+    background: url(/static/images/loging.png) no-repeat center;
+}
+
 .header .login i {
-    font-size: 20px !important;
+    font-size: 20px;
 }
 .header .login:hover i{
     color: #6f7574;
