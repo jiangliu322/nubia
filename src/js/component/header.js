@@ -1,4 +1,4 @@
-define(["jquery","cookie"], () => {
+define(["item","url","template","jquery","cookie"], (items,urls) => {
 	class Header{
 		constructor(){
 			this.init();
@@ -38,20 +38,41 @@ define(["jquery","cookie"], () => {
 			//设置点击回到顶部
 			
 			$("#toptop").on("click",function(){
-				document.body.top = "0px"
+				 $('body,html').animate({ scrollTop: 0 }, 1000);
 			})
 			
 			
 		}
 		move(){
+			//定义一个函数来渲染页面
+			function add(){
+				items.init(urls.baseUrlRap+"/nubia");
+			}
+			let flag = false
 			$("#phone").hover(function(){
-				console.log(1)
+				flag = true
+				$("#disbox").animate({height:'260px'})
+				add()
 			},function(){
-				console.log(2)
+				flag = false
+				$("#disbox").hover(function(){
+					flag = true
+				},function(){
+					flag = false
+					$("#disbox").animate({height:'0px'})
+					$("#disbox").text("")
+				})
+				setTimeout(function(){
+					console.log(flag)
+					if(flag == false){
+						$("#disbox").animate({height:'0px'})
+						$("#disbox").text("")
+					}
+				},10)
 			})
 			
 		}
-		//设置一个函数来创建div
+		
 		
 	}
 	return new Header();

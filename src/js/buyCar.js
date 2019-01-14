@@ -19,6 +19,7 @@ require(["./requirejs.config"], () => {
 					"display":"block"
 				})
 				let thiscookie = $.cookie("shopCar")
+				console.log(thiscookie)
 				let get = thiscookie.split(':')
 				if(get.length > 2){
 					for(let i = 0; i < get.length-2; i++){
